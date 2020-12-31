@@ -54,7 +54,7 @@ jobs:
 
 worlflows:
   version: 2
-  Example_workflow:
+  Example_Workflow:
     jobs:
       - Hello-World
       - I-Have-Code:
