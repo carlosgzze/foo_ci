@@ -52,7 +52,7 @@ jobs:
            command: |
               echo 'Do work once the approval has completed'
 
-worlflows:
+workflows:
   version: 2
   Example_Workflow:
     jobs:
