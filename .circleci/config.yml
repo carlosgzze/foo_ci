@@ -11,8 +11,8 @@ jobs:
            name: Hello World
            command: |
              uname -a
-             hostnamectl
              whoami
+             ls
              echo 'Hello World!'
              echo 'This is the Delivery Pipeline'
     I-Have-Code:
@@ -41,7 +41,7 @@ jobs:
              node -v
              uname -a
              whoami
-             hostnamectl
+             ls
     Now-Complete:
       docker:
         - image: alpine:3.7
@@ -53,6 +53,8 @@ jobs:
            name: Approval Complete
            command: |
               echo 'Do work once the approval has completed'
+              echo 'Validating the default path'
+              ls -la
 
 workflows:
   version: 2
